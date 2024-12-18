@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fight Covid-19 | Pritiman Bala</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <div id="preloader">
+        <div class="img">
+            <img src="ezgif-4-ccd3048f56.gif" alt="preloader">
+        </div>
+        <div class="t">
+            <p>Website is loading</p>
+        </div>
+    </div>
+    <div id="container">
+        <div class="query">
+            <div class="heading">
+                <div class="h1">
+                    <h1>Fight Covid</h1>
+                </div>
+                <div class="h2">
+                    <h2>Hospital Bed availability</h2>
+                </div>
+            </div>
+            <div class="ques">
+                <div class="state">
+                    <p>State :</p>
+                    <select name="state" disabled>
+                        <option value="Tamil Nadu" selected>Tamil Nadu<option>
+                    </select>
+                </div>
+                <div class="district">
+                    <p>District</p>
+                    <select class="dd">
+                    </select>
+                </div>
+                <div class="selection">
+                    <p>Type :</p>
+                    <select name="">
+                        <option value="o2">Beds with O2 supply</option>
+                        <option value="nono2">Beds with non O2 supply</option>
+                        <option value="ICU">Beds with ICU faciliation</option>
+                        <option value="total">Total Vaccancy</option>
+                    </select>
+                </div>
+            </div>
+            <div class="btn">
+                <button>Search</button>
+            </div>
+            
+            <div class="message">
+                <div class="rslt">
+                    <h2>Results found</h2>
+                </div>
+                <div class="O2">
+                    <div class="Earmarked">
+                        <p class="msg">Earmarked O2 beds</p>
+                        <p class="value" id="o2er">999</p>
+                    </div>
+                    <div class="occupied">
+                        <p class="msg" >Occupied O2 beds</p>
+                        <p class="value" id="o2oc">999</p> 
+                    </div>
+                    <div class="left">
+                        <p class="msg" >Vaccant O2 beds</p>
+                        <p class="value" id="o2vc">999</p> 
+                    </div>
+                </div>
+                <div class="nonO2">
+                    <div class="Earmarked">
+                        <p class="msg">Earmarked non O2 beds</p>
+                        <p class="value" id="no2er">999</p>
+                    </div>
+                    <div class="occupied">
+                        <p class="msg" >Occupied non O2 beds</p>
+                        <p class="value" id="no2oc">999</p> 
+                    </div>
+                    <div class="left">
+                        <p class="msg" >Vaccant non O2 beds</p>
+                        <p class="value" id="no2vc">999</p> 
+                    </div>
+                </div>
+                <div class="total">
+                    <p class="msg">Beds Available</p>
+                    <p class="value" id="total">999</p>
+                </div>
+                <div class="ICU">
+                    <div class="Earmarked">
+                        <p class="msg">Earmarked ICU beds</p>
+                        <p class="value" id="icuer">999</p>
+                    </div>
+                    <div class="occupied">
+                        <p class="msg" >Occupied ICU beds</p>
+                        <p class="value" id="icuoc">999</p> 
+                    </div>
+                    <div class="left">
+                        <p class="msg" >Vaccant ICU beds</p>
+                        <p class="value" id="icuvc">999</p> 
+                    </div>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="last">
+        <p>This website is based on the data provided by Goverment of Tamil Nadu.
+        On the date 20-05-2021.Website Made By Pritiman Bala</p>
+    </div>
+    <script src="script.js"></script>
+</body>
+</html>
