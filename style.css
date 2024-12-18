@@ -45,7 +45,6 @@ body{
 }
 .heading{
     margin: 1em auto;
-    border: 2px dotted black;
     width: fit-content;
     padding: 0 3em;
 }
@@ -59,6 +58,7 @@ h2{
 }
 .ques{
     border: 2px dotted black;
+    border-radius:15px ;
     width: 50%;
     margin: 1em auto;
     min-width: fit-content;
@@ -116,6 +116,7 @@ select:hover{
 }
 .message{
     border: 2px dotted black;
+    border-radius: 15px;
     width: 50%;
     margin: 1em auto;
 }
