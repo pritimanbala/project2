@@ -15,20 +15,10 @@ let loaderr = (isloading) => {
     if (!isloading) {
         loader.style.display = "none";
         loader2.style.display = "flex";
-        loa.style.display = "none";  
-        i = 0;
     } else {
         loader.style.display = "flex";
         loader2.style.display = "none";
-        let intervalId; 
-        intervalId = setInterval(() => {
-            i++;
-            if (i > 5) {
-                loa.style.display = "block";
-                clearInterval(intervalId); 
-            }
-        }, 1000);
-    }
+        
     
 }
 
