@@ -10,31 +10,28 @@ let fetchData = async () => {
 let loaderr = (isloading) => {
     let loader = document.getElementById('preloader');
     let loader2 = document.getElementById('container')
-    if(!isloading){
+    let loa = document.getElementById('loa');
+    i = 0;
+    if (!isloading) {
         loader.style.display = "none";
         loader2.style.display = "flex";
+        loa.style.display = "none";  
+        i = 0;
     } else {
         loader.style.display = "flex";
         loader2.style.display = "none";
+        let intervalId; 
+        intervalId = setInterval(() => {
+            i++;
+            if (i > 5) {
+                loa.style.display = "block";
+                clearInterval(intervalId); 
+            }
+        }, 1000);
     }
+    
 }
 
-// if(tr){
-    // let he1 = document.getElementsByClassName('O2');
-    // let he2 = document.getElementsByClassName('nonO2');
-    // let he3 = document.getElementsByClassName('ICU');
-    // for(let element of he1){
-    //     element.style.display = 'none' ;
-    // }
-    // for(let element of he2){
-    //     element.style.display = 'none' ;
-    // }
-    // for(let element of he3){
-    //     element.style.display = 'none' ;
-    // }
-// }
-
-let i = 0;
 let move = async () => {
     console.log('getting data');
     loaderr(true);
@@ -59,21 +56,11 @@ let move = async () => {
     loaderr(false);
     dist = 0; 
     opt.addEventListener('click', (evt) => {
-        if (i % 2 == 1) {
             dist = evt.target.value;
-            i++;
-        } else {
-            i++;
-        }
     })
     sele = 'o2'; 
     know.addEventListener('click', (evt) => {
-        if (i % 2 == 1) {
             sele = evt.target.value;
-            i++;
-        } else {
-            i++;
-        }
     })
     let n = document.querySelector('.btn');
     n.addEventListener('click', () => {
