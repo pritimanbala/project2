@@ -16,10 +16,6 @@ body{
 .t{
     text-align: center;
 }
-#loa{
-    display: none;
-    color: rgb(114, 0, 0);
-}
 #preloader{
     height: 100vh;
     width: 100vw;
